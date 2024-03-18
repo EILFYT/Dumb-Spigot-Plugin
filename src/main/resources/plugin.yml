@@ -1,0 +1,30 @@
+version: 1.0.0
+main: theneonfish.firstspigotproject.Main
+name: TestPlugin
+author: TheNeonFish
+description: test plugin
+api-version: 1.19
+
+commands:
+  getitem:
+    description: gives you a custom item from this plugin based on the name you put in
+    usage: /getitem <Item Name>
+  adddrilling:
+    description: adds the industrial drilling enchantment to the item in your hand
+    usage: /adddrilling
+  sendtocoolworld:
+    description: sends the player to the cool world
+    usage: /sendtocoolworld
+  startminigame:
+    description: starts the minigame with the first 12 players in the queue
+    usage: /startminigame <"randomize" here if you want to randomize the teams, anything else if you don't>
+  joinMinigameQueue:
+    description: adds the player to the minigame queue
+    usage: /joinMinigameQueue
+  leaveMinigameQueue:
+    description: removes the player from the minigame queue
+    usage: /leaveMinigameQueue
+
+worlds:
+  CustomCoolWorld:
+    generator: TestPlugin
